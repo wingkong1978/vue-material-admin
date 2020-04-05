@@ -42,6 +42,10 @@
             </v-tabs-items>
           </v-tabs>
         </v-flex>
+        <v-flex 12>
+          test
+          <svg-icon icon-class="qq" style="color:#67C23A" />
+        </v-flex>
       </v-layout>
     </v-container>
   </div>
@@ -49,6 +53,8 @@
 
 <script>
 // import VWidget from '@/components/VWidget'
+import MaterialJson from '@/static/data/material.json'
+import FontAwesomeJson from '@/static/data/font-awesome.json'
 export default {
   components: {
     // VWidget
@@ -64,21 +70,27 @@ export default {
   computed: {
   },
   created() {
+    this.material = MaterialJson.icons.splice(0, 100)
+    const version = '4.7.0'
+    this.ft = FontAwesomeJson[version].splice(0, 100)
+/*
     fetch('/static/data/material.json')
       .then(response => {
+        console.log('response---->', response)
         return response.json()
       })
       .then(json => {
         this.material = json.icons.splice(0, 100)
       })
-    fetch('/static/data/font-awesome.json')
-      .then(response => {
-        return response.json()
-      })
-      .then(json => {
-        const version = '4.7.0'
-        this.ft = json[version].splice(0, 100)
-      })
+*/
+    // fetch('/static/data/font-awesome.json')
+    //   .then(response => {
+    //     return response.json()
+    //   })
+    //   .then(json => {
+    //     const version = '4.7.0'
+    //     this.ft = json[version].splice(0, 100)
+    //   })
   },
   methods: {
   }

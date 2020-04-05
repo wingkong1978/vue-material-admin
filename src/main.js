@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import vuetify from '@/plugins/vuetify' // path to vuetify export
 import router from './router'
+import './icons'
 // import './theme/default.scss'
 import 'font-awesome/css/font-awesome.css'
 // import colors from 'vuetify/es5/util/colors'
