@@ -24,7 +24,7 @@
 
 ## 简介
 
-Vue-material-admin 是一个前端admin框架，基于[Vue]((https://github.com/vuejs/vue) 和 UI 框架 [Vuetify](https://vuetifyjs.com/).
+Vue-material-admin 是一个前端admin框架，基于[Vue](https://github.com/vuejs/vue) 和 UI 框架 [Vuetify](https://vuetifyjs.com/).
 
 ## 功能
 
