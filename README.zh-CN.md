@@ -22,20 +22,41 @@
 
 简体中文 | [English](./README.md)
 
-## 简介 
+## 简介
+
+Vue-material-admin 是一个前端admin框架，基于[Vue]((https://github.com/vuejs/vue) 和 UI 框架 [Vuetify](https://vuetifyjs.com/).
+
 ## 功能
 
 ```
 
 ```
 
-## 开发
+## 项目开发
 
-```bash
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
 ```
 
 浏览器访问 http://localhost:9527
 
+### 配置
+参考 [配置指引](https://cli.vuejs.org/config/).
 
 ## License
 

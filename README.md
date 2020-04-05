@@ -21,6 +21,12 @@
 
 # vue-material-admin using Vuetify
 
+## Introduction
+
+Vue-material-admin is front-end template for admin. It's based on [vue](https://github.com/vuejs/vue) and UI framework [Vuetify](https://vuetifyjs.com/).
+
+## Features
+
 ## Project setup
 ```
 npm install
@@ -41,5 +47,17 @@ npm run build
 npm run lint
 ```
 
+Browser to view http://localhost:9527
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## ChangeLog
+
+## Demo
+
+## License
+
+[MIT](https://github.com/wingkong1978/vue-material-admin/blob/master/LICENSE)
+
+Copyright (c) 2020-present WingKongZheng
