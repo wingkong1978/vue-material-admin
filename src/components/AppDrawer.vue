@@ -16,7 +16,7 @@
     <v-toolbar color="primary darken-1" dark>
       <img :src="computeLogo" height="36" alt="Vue Material Admin Template">
       <v-toolbar-title class="ml-0 pl-3">
-        <span class="hidden-sm-and-down">{{appTitle}}</span>
+        <span class="hidden-sm-and-down">{{ appTitle }}</span>
       </v-toolbar-title>
     </v-toolbar>
     <vue-perfect-scrollbar class="drawer-menu--scroll" :settings="scrollSettings">
@@ -96,14 +96,14 @@ export default {
     expanded: {
       type: Boolean,
       default: true
+    },
+    drawer:{
+      type: Boolean,
+      default: true
     }
-  },
-  mounted() {
-    console.log('menu....--->', menu)
   },
   data: () => ({
     mini: false,
-    drawer: true,
     menus: menu,
     scrollSettings: {
       maxScrollbarLength: 160
@@ -121,6 +121,9 @@ export default {
     sideToolbarColor() {
       return this.$vuetify.options.extra.sideNav
     }
+  },
+  mounted() {
+    console.log('menu....--->', menu)
   },
   created() {
     window.getApp.$on('APP_DRAWER_TOGGLED', () => {
@@ -142,13 +145,19 @@ export default {
 }
 </script>
 
-<style lang="stylus">
-// @import '../../node_modules/vuetify/src/stylus/settings/_elevations.styl';
+<style lang="scss">
+ /*@import '../../node_modules/vuetify/src/stylus/settings/_elevations.styl';*/
 
-#appDrawer
-  overflow: hidden
-  .drawer-menu--scroll
-    height: calc(100vh - 80px)
-    overflow: auto
+ /*@import "~vuetify/src/styles/s";*/
+
+#appDrawer{
+
+  overflow: hidden;
+  .drawer-menu--scroll{
+
+    height: calc(100vh - 80px);
+    overflow: auto;
+  }
+}
 
 </style>

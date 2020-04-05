@@ -19,7 +19,7 @@
       />
     </v-toolbar-title>
     <v-spacer />
-    <v-btn href="mailto:wangqiangshen@gmail.com">
+    <v-btn href="mailto:wingkong1978@gmail.com">
       Hire Me
     </v-btn>
     <v-btn icon href="https://github.com/tookit/vue-material-admin">

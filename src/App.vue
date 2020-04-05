@@ -2,7 +2,7 @@
   <div id="appRoot">
     <template v-if="!$route.meta.public">
       <v-app id="inspire" class="app">
-        <app-drawer class="app--drawer" />
+        <app-drawer class="app--drawer" :drawer="showDrawer" />
         <app-toolbar class="app--toolbar" />
         <v-content>
           <tags-view />
@@ -66,6 +66,8 @@ import TagsView from '@/components/TagsView'
 // import menu from '@/api/menu'
 import ThemeSettings from '@/components/ThemeSettings'
 import AppEvents from './event'
+const { body } = document
+const WIDTH = 1264 // refer to Bootstrap's responsive design
 export default {
   components: {
     AppDrawer,
@@ -78,6 +80,7 @@ export default {
   data: () => ({
     expanded: true,
     rightDrawer: false,
+    showDrawer: true,
     snackbar: {
       show: false,
       text: '',
@@ -94,6 +97,8 @@ export default {
       this.$on(item.name, item.callback)
     })
     window.getApp = this
+    const rect = body.getBoundingClientRect()
+    if (rect.width - 1 < WIDTH) this.showDrawer = false
   },
   methods: {
     openThemeSettings() {
