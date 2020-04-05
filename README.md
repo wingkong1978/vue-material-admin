@@ -1,4 +1,10 @@
-# vue-material-admin
+<p align="center">
+  <img width="100" src="https://vuejs.org/images/logo.png">
+</p>
+
+[简体中文](./README.zh-CN.md) | English
+
+# vue-material-admin using Vuetify
 
 ## Project setup
 ```
