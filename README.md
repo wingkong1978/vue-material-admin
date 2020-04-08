@@ -57,6 +57,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Demo
 
+[Demo](https://vue-materail-admin.netlify.com/)
+
 ## License
 
 [MIT](https://github.com/wingkong1978/vue-material-admin/blob/master/LICENSE)
